@@ -1,0 +1,10 @@
+{
+  "agent": {
+    "model": "anthropic/claude-opus-4-6"
+  },
+  "channels": {
+    "whatsapp": {
+      "allowFrom": ["+966549501486"]
+    }
+  }
+}
