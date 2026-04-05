@@ -5,6 +5,9 @@
     "port": 8080,
     "auth": {
       "mode": "none"
+    },
+    "controlUi": {
+      "dangerouslyAllowHostHeaderOriginFallback": true
     }
   },
   "agent": {
