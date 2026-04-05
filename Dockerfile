@@ -260,5 +260,4 @@ USER node
 #   - aliases: /health and /ready
 # For external access from host/ingress, override bind to "lan" and set auth.
 HEALTHCHECK --interval=3m --timeout=10s --start-period=15s --retries=3 \
-CMD ["node", "--max-old-space-size=1536", "/app/openclaw.mjs", "gateway", "--port", "10000", "--bind", "0.0.0.0"]
 
