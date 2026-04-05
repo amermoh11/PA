@@ -4,7 +4,7 @@ services:
     runtime: docker
     plan: starter
     healthCheckPath: /healthz
-    dockerCommand: node --max-old-space-size=1536 /app/openclaw.mjs gateway
+    dockerCommand: node --max-old-space-size=1536 /app/openclaw.mjs gateway --allow-unconfigured
     envVars:
       - key: PORT
         value: "8080"
