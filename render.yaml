@@ -6,10 +6,14 @@ services:
     healthCheckPath: /healthz
     dockerCommand: node --max-old-space-size=1536 /app/openclaw.mjs gateway
     envVars:
+      - key: PORT
+        value: "8080"
       - key: OPENCLAW_GATEWAY_PORT
         value: "8080"
       - key: OPENCLAW_GATEWAY_BIND
         value: "0.0.0.0"
+      - key: NODE_OPTIONS
+        value: "--max-old-space-size=1536"
       - key: OPENCLAW_STATE_DIR
         value: /data/.openclaw
       - key: OPENCLAW_WORKSPACE_DIR
@@ -21,6 +25,14 @@ services:
       - key: TWILIO_ACCOUNT_SID
         sync: false
       - key: TWILIO_AUTH_TOKEN
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: MARKETAUX_API_KEY
+        sync: false
+      - key: FINNHUB_API_KEY
+        sync: false
+      - key: NEWSAPI_KEY
         sync: false
     disk:
       name: openclaw-data
