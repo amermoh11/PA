@@ -4,6 +4,7 @@ services:
     runtime: docker
     plan: starter
     healthCheckPath: /healthz
+    numInstances: 1
     envVars:
       - key: PORT
         value: "8080"
