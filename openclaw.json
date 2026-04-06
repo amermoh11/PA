@@ -7,7 +7,7 @@
       "mode": "none"
     },
     "controlUi": {
-      "dangerouslyAllowHostHeaderOriginFallback": true
+      "enabled": false
     }
   },
   "agent": {
