@@ -18,7 +18,7 @@
       "allowFrom": ["+966549501486"]
     }
   },
-  "extensions": {
+  "plugins": {
     "openai": { "enabled": false },
     "amazon-bedrock": { "enabled": false },
     "anthropic-vertex": { "enabled": false },
