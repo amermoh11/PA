@@ -3,12 +3,14 @@
     "mode": "local",
     "bind": "lan",
     "port": 8080,
+    "auth": {
+      "token": "danah2026",
+      "allowTailscale": false
+    },
     "controlUi": {
       "enabled": true,
-      "dangerouslyAllowHostHeaderOriginFallback": true
-    },
-    "auth": {
-      "token": "danah2026"
+      "dangerouslyAllowHostHeaderOriginFallback": true,
+      "dmPolicy": "open"
     }
   },
   "agents": {
