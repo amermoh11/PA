@@ -16,6 +16,10 @@
   "channels": {
     "whatsapp": {
       "allowFrom": ["+966549501486"]
+    },
+    "slack": {
+      "botToken": "xoxb-your-token",
+      "appToken": "xapp-your-token"
     }
   }
 }
