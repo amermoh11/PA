@@ -4,7 +4,8 @@
     "bind": "lan",
     "port": 8080,
     "controlUi": {
-      "enabled": false
+      "enabled": true,
+      "dangerouslyAllowHostHeaderOriginFallback": true
     }
   },
   "agents": {
