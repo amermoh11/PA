@@ -6,6 +6,9 @@
     "controlUi": {
       "enabled": true,
       "dangerouslyAllowHostHeaderOriginFallback": true
+    },
+    "auth": {
+      "token": "danah2026"
     }
   },
   "agents": {
