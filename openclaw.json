@@ -16,7 +16,6 @@
   "channels": {
     "whatsapp": {
       "allowFrom": ["+966549501486"]
-    },
-    "slack": {}
+    }
   }
 }
