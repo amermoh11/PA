@@ -18,5 +18,10 @@
       "allowFrom": ["+966549501486"]
     },
     "slack": {}
+  },
+  "extensions": {
+    "github-copilot": {
+      "enabled": false
+    }
   }
 }
