@@ -4,13 +4,11 @@
     "bind": "lan",
     "port": 8080,
     "auth": {
-      "token": "danah2026",
-      "allowTailscale": false
+      "token": "danah2026"
     },
     "controlUi": {
       "enabled": true,
-      "dangerouslyAllowHostHeaderOriginFallback": true,
-      "dmPolicy": "open"
+      "dangerouslyAllowHostHeaderOriginFallback": true
     }
   },
   "agents": {
