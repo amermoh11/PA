@@ -3,9 +3,6 @@
     "mode": "local",
     "bind": "lan",
     "port": 8080,
-    "auth": {
-      "mode": "none"
-    },
     "controlUi": {
       "enabled": false
     }
