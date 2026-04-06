@@ -17,5 +17,30 @@
     "whatsapp": {
       "allowFrom": ["+966549501486"]
     }
+  },
+  "extensions": {
+    "openai": { "enabled": false },
+    "amazon-bedrock": { "enabled": false },
+    "anthropic-vertex": { "enabled": false },
+    "copilot-proxy": { "enabled": false },
+    "discord": { "enabled": false },
+    "feishu": { "enabled": false },
+    "googlechat": { "enabled": false },
+    "imessage": { "enabled": false },
+    "irc": { "enabled": false },
+    "line": { "enabled": false },
+    "matrix": { "enabled": false },
+    "mattermost": { "enabled": false },
+    "msteams": { "enabled": false },
+    "nextcloud-talk": { "enabled": false },
+    "nostr": { "enabled": false },
+    "signal": { "enabled": false },
+    "synology-chat": { "enabled": false },
+    "telegram": { "enabled": false },
+    "tlon": { "enabled": false },
+    "twitch": { "enabled": false },
+    "zalo": { "enabled": false },
+    "zalouser": { "enabled": false },
+    "qqbot": { "enabled": false }
   }
 }
