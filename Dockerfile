@@ -264,4 +264,4 @@ HEALTHCHECK --interval=3m --timeout=10s --start-period=15s --retries=3 CMD node 
 ENV OPENCLAW_GATEWAY_CONTROL_UI_ENABLED=false
 RUN mkdir -p /home/node/.openclaw
 COPY --chown=node:node openclaw.json /home/node/.openclaw/openclaw.json
-CMD ["node", "--max-old-space-size=1536", "/app/openclaw.mjs", "gateway", "--allow-unconfigured", "--bind", "lan", "--port", "8080"]
+CMD ["node", "--max-old-space-size=1536", "/app/openclaw.mjs", "gateway", "--allow-unconfigured", "--bind", "lan", "--port", "8080", "--state-dir", "/data/.openclaw"]
