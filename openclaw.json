@@ -9,7 +9,8 @@
     "controlUi": {
       "enabled": true,
       "dangerouslyAllowHostHeaderOriginFallback": true
-    }
+    },
+    "stateDir": "/data/.openclaw"
   },
   "agents": {
     "defaults": {
