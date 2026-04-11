@@ -4,17 +4,16 @@
     "bind": "lan",
     "port": 8080,
     "auth": {
-      "token": "danah2026"
+      "mode": "none"
     },
     "controlUi": {
-      "enabled": true,
       "dangerouslyAllowHostHeaderOriginFallback": true
     }
   },
-  "agents": {
-    "defaults": {
-      "model": "anthropic/claude-sonnet-4-6"
-    }
+  "agent": {
+    "model": "anthropic/claude-sonnet-4-6",
+    "maxTokens": 1000,
+    "contextWindow": 10000
   },
   "channels": {
     "whatsapp": {
