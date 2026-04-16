@@ -261,6 +261,10 @@ USER node
 # For external access from host/ingress, override bind to "lan" and set auth.
 HEALTHCHECK --interval=3m --timeout=10s --start-period=15s --retries=3 CMD node -e "fetch('http://127.0.0.1:18789/healthz').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
 
+RUN mkdir -p /home/node/.openclaw
+
+COPY --chown=node:node openclaw.json /home/node/.openclaw/openclaw.json
+
 USER node
 
-CMD ["node", "--max-old-space-size=1536", "openclaw.mjs", "gateway", "--allow-unconfigured", "--bind", "lan", "--port", "8080"]
+CMD ["node", "--max-old-space-size=1536", "openclaw.mjs", "gateway", "--bind", "lan", "--port", "8080"]
