@@ -2,20 +2,11 @@ services:
   - type: web
     name: openclaw
     runtime: docker
-    plan: starter
-    healthCheckPath: /healthz
-    numInstances: 1
+    plan: standard
+    healthCheckPath: /health
     envVars:
-      - key: PORT
-        value: "8080"
       - key: OPENCLAW_GATEWAY_PORT
         value: "8080"
-      - key: OPENCLAW_GATEWAY_BIND
-        value: "lan"
-      - key: OPENCLAW_GATEWAY_MODE
-        value: local
-      - key: NODE_OPTIONS
-        value: "--max-old-space-size=1536"
       - key: OPENCLAW_STATE_DIR
         value: /data/.openclaw
       - key: OPENCLAW_WORKSPACE_DIR
@@ -27,14 +18,6 @@ services:
       - key: TWILIO_ACCOUNT_SID
         sync: false
       - key: TWILIO_AUTH_TOKEN
-        sync: false
-      - key: TAVILY_API_KEY
-        sync: false
-      - key: MARKETAUX_API_KEY
-        sync: false
-      - key: FINNHUB_API_KEY
-        sync: false
-      - key: NEWSAPI_KEY
         sync: false
     disk:
       name: openclaw-data
