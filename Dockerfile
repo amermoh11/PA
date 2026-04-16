@@ -265,5 +265,5 @@ ENV OPENCLAW_GATEWAY_CONTROL_UI_ENABLED=false
 ENV OPENCLAW_GATEWAY_CONTROL_UI_DANGEROUSLY_ALLOW_HOST_HEADER_ORIGIN_FALLBACK=true
 RUN mkdir -p /home/node/.openclaw
 COPY --chown=node:node openclaw.json /home/node/.openclaw/openclaw.json
-RUN mkdir -p /root/.openclaw && ln -sf /app/openclaw.json /root/.openclaw/openclaw.json
+RUN mkdir -p /data/.openclaw && cp /app/openclaw.json /data/.openclaw/openclaw.json
 CMD ["node", "--max-old-space-size=1536", "/app/openclaw.mjs", "gateway", "--allow-unconfigured", "--bind", "lan", "--port", "8080"]
