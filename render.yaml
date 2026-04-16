@@ -7,6 +7,14 @@ services:
     envVars:
       - key: OPENCLAW_GATEWAY_PORT
         value: "8080"
+      - key: OPENCLAW_GATEWAY_BIND
+        value: "lan"
+      - key: OPENCLAW_GATEWAY_MODE
+        value: local
+      - key: OPENCLAW_GATEWAY_CONTROL_UI_DANGEROUSLY_ALLOW_HOST_HEADER_ORIGIN_FALLBACK
+        value: "true"
+      - key: NODE_OPTIONS
+        value: "--max-old-space-size=1536"
       - key: OPENCLAW_STATE_DIR
         value: /data/.openclaw
       - key: OPENCLAW_WORKSPACE_DIR
